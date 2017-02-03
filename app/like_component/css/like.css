@@ -1,0 +1,16 @@
+.likOuter{
+	
+	margin-left: 50px;
+	min-height: 300px;
+	width: 900px;
+	background-color: #859FBD;
+	border:1px solid red;
+}
+.likinner{
+	
+	margin-left: 50px;
+	min-height: 300px;
+	width: 900px;
+	background-color: #A8FED9;
+	border:1px solid red;
+}

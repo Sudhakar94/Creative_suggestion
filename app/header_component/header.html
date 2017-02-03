@@ -1,0 +1,19 @@
+<div class="headingClass">
+    <div class="wrap">
+        <div class="cube">
+            <a routerLink="/home">
+                <img src="../images/logo.jpg" class="front" alt="logo" width="80px" height="80px">
+                <img src="../images/logo.jpg" class="back" alt="logo" width="80px" height="80px">
+                <img src="../images/logo.jpg" class="top" alt="logo" width="80px" height="80px">
+                <img src="../images/logo.jpg" class="bottom" alt="logo" width="80px" height="80px">
+                <img src="../images/logo.jpg" class="left" alt="logo" width="80px" height="80px">
+                <img src="../images/logo.jpg" class="right" alt="logo" width="80px" height="80px">
+            </a>
+        </div>
+    </div>
+    <p class="logUsername">Hello {{userdName}}</p>
+    <span><H1 class="headingOfPage">Creative Suggestion</H1></span>
+    <a routerLink="/login" class="loginNav">LOG OUT</a>
+    <a routerLink="/second" class="loginNav">DISCUSSION</a>
+    <router-outlet></router-outlet>
+</div>

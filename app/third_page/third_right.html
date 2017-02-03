@@ -1,0 +1,10 @@
+<div class="rightOp" >
+ <table>
+        <tr *ngFor="let contact of contacts" style="margin-bottom: 10px;">
+            <td>{{contact.descr}}</td> 
+            <td><button (click)="removeContact(contact)">Delete</button></td>
+        </tr>
+    </table>
+   <button (click)="justGo()">data checking</button>
+   
+</div>

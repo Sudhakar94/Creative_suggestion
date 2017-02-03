@@ -1,0 +1,89 @@
+.headingClass {
+    width: 100%;
+    min-height: 110px;
+    background-image: url("../../images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.headingOfPage { 
+    margin-top: 34px;
+    font-size: 65px;
+    display: inline-block;
+    font-style: italic;
+    padding-left: 396px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px red, 0 0 25px red, 0 0 5px red;
+}
+.wrap {
+    perspective: 00px;
+    perspective-origin: 50% 80px;
+}
+.cube {
+    position: relative;
+    width: 80px;
+    transform-style: preserve-3d;
+}
+.cube img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+.back {
+    transform: translateZ(-40px) rotateY(180deg);
+}
+.right {
+    transform: rotateY(-270deg) translateX(40px);
+    transform-origin: top right;
+}
+.left {
+    transform: rotateY(270deg) translateX(-40px);
+    transform-origin: center left;
+}
+.top {
+    transform: rotateX(-90deg) translateY(-40px);
+    transform-origin: top center;
+}
+.bottom {
+    transform: rotateX(90deg) translateY(40px);
+    transform-origin: bottom center;
+}
+.front {
+    transform: translateZ(40px);
+}
+@keyframes spin {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+.cube {
+    animation: spin 5s infinite linear;
+}
+img {
+    float: left;
+    margin-top: 14px;
+}
+h1 {
+    display: inline-block;
+    font-style: italic;
+    padding-left: 380px;
+    color: black;
+}
+.loginNav {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 30px;
+    float: right;
+    text-decoration: none;
+    border: 0.5px blue;
+    margin-right: 35px;
+    margin-top: 14px;
+    border-radius: 10px;
+    color: black;
+}
+.loginNav:hover {
+    background-color: #ff3333;
+}

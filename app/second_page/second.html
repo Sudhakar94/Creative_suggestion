@@ -1,0 +1,44 @@
+<section class="secondPage">
+	<headar></headar>
+	<div class="doposTit" (click)="doPost()">
+		<img class="postIdea" src="../images/dis13.jpg"/>
+	</div>
+	<div class="newDiv">
+		<ul *ngFor="let contact of storedData" class="tabCloss">		
+			<li class="initial">
+				<p class="nameSlant">{{contact.iinital}}</p>
+			</li>	
+			<li class="ussNam">
+				<p class="myName">{{contact.naame}}</p>
+			</li>
+			<li class="datE">
+				<p class="datEe">{{contact.ddatt}}</p>
+			</li>	
+			<li class="close">
+				<button class="closBtn" (click)="removeContact(contact)">X</button>
+			</li>
+			<li>
+				<p class="conTent">{{contact.data.content}}</p>
+			</li>
+			<li>
+				<p  [hidden]="!contact.data.content" class="likCls">{{contact.liik}}</p>
+			</li>	
+			<li>
+				<img class="btnImg" (click)="likeCount(contact)"  [hidden]="!contact.data.content" src="../images/like.jpg"/>
+			</li>
+			<li class="clearFloat"></li>
+		</ul>
+	</div>
+</section>
+<div class="inputDiv" *ngIf="enablePost=='true'">
+	
+	<div class="inptContanr">
+		<button (click)="closPost()" class="closeBtn">CLOSE</button>
+		<p>TYPE YOUR CONTENT HERE</p>
+		<textarea rows="4" cols="50" [(ngModel)]="content" class="texArea">
+			type yor view...
+		</textarea>
+		<br>
+		<button (click)="postFunction(content)" class="butnDes">POST</button>
+	</div>
+</div>
